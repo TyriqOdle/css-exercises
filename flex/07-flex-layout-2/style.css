@@ -8,7 +8,12 @@ body {
   height: 72px;
   background: darkmagenta;
   color: white;
+  display: flex;
+  align-items: center;
+  
+  
 }
+
 
 .footer {
   height: 72px;
@@ -16,14 +21,47 @@ body {
   color: darkmagenta;
 }
 
-.sidebar {
-  width: 300px;
-  background: royalblue;
-  box-sizing: border-box;
+.container{
+  display: flex;
+  
 }
 
-.card {
+.sidebar {
+  width: 300px;
+  height: 825px;
+  background: royalblue;
+  box-sizing: border-box;
+
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  
+}
+
+.cards{
+  border: solid red;
+  width: 1700px;
+  display: flex;
+  flex: auto;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+.card  {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  width: 300px;
+  height: 200px;
+  padding: 50px;
+  margin: 20px;
+  
 }
